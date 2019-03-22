@@ -17,7 +17,9 @@ install:
   - brew upgrade carthage
 
 script:
+  - cd ToDoList-iOS
   - xcodebuild -sdk iphonesimulator -workspace ToDoList.xcworkspace -scheme ToDoList -configuration Release clean build -derivedDataPath builddata/
+  - cd ..
   - Appium &
   - cd AutomationTest
   - mvn test

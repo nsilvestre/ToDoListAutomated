@@ -22,7 +22,7 @@ public class SimulatorTest {
         /* Below capability must be uncommented for /AppiumTest job */
          //  capabilities.setCapability("app", "/Users/travis/build/nsilvestre/appiumTest/ToDoList/builddata/Build/Products/Release-iphonesimulator/ToDoList.app");
         /* Below capability must be uncommented for /ToDoList job */
-        capabilities.setCapability("app", "/Users/travis/build/nsilvestre/ToDoList/builddata/Build/Products/Release-iphonesimulator/ToDoList.app");
+        capabilities.setCapability("app", "/Users/travis/build/nsilvestre/ToDoListAutomated/ToDoListAutomated/ToDoList-iOS/builddata/Build/Products/Release-iphonesimulator/ToDoList.app");
         capabilities.setCapability("noReset", "true");
         capabilities.setCapability("useNewWDA", "false");
 
