@@ -1,0 +1,13 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "aa62c76a4b13fe20597d77b10b1fb949"
+build_time: [1553107485, 58605000]
+inputs:
+  "/Users/nsilvestre/Documents/ToDoList-iOS/ToDoList/Ui/Task/TaskViewPresenter.swift": [9223372036, 854775807]
+  "/Users/nsilvestre/Documents/ToDoList-iOS/ToDoList/Ui/Main/TaskTableViewCell.swift": [9223372036, 854775807]
+  "/Users/nsilvestre/Documents/ToDoList-iOS/ToDoList/Ui/Main/TableViewPresenter.swift": [9223372036, 854775807]
+  "/Users/nsilvestre/Documents/ToDoList-iOS/ToDoList/Models/TaskDto.swift": [9223372036, 854775807]
+  "/Users/nsilvestre/Documents/ToDoList-iOS/ToDoList/Ui/Main/TableViewController.swift": [9223372036, 854775807]
+  "/Users/nsilvestre/Documents/ToDoList-iOS/ToDoList/Ui/Base/UIBaseViewController.swift": [9223372036, 854775807]
+  "/Users/nsilvestre/Documents/ToDoList-iOS/ToDoList/Ui/Task/TaskViewController.swift": [9223372036, 854775807]
+  "/Users/nsilvestre/Documents/ToDoList-iOS/ToDoList/AppDelegate.swift": [9223372036, 854775807]
+  "/Users/nsilvestre/Documents/ToDoList-iOS/ToDoList/Managers/ApiClient.swift": [9223372036, 854775807]

@@ -1,0 +1,13 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "0f1238978192e088d1bdf1624bfdbdf1"
+build_time: [1553107473, 855634000]
+inputs:
+  "/Users/nsilvestre/Documents/ToDoList-iOS/Pods/AlamofireImage/Source/AFIError.swift": [9223372036, 854775807]
+  "/Users/nsilvestre/Documents/ToDoList-iOS/Pods/AlamofireImage/Source/Image.swift": [9223372036, 854775807]
+  "/Users/nsilvestre/Documents/ToDoList-iOS/Pods/AlamofireImage/Source/ImageCache.swift": [9223372036, 854775807]
+  "/Users/nsilvestre/Documents/ToDoList-iOS/Pods/AlamofireImage/Source/ImageDownloader.swift": [9223372036, 854775807]
+  "/Users/nsilvestre/Documents/ToDoList-iOS/Pods/AlamofireImage/Source/ImageFilter.swift": [9223372036, 854775807]
+  "/Users/nsilvestre/Documents/ToDoList-iOS/Pods/AlamofireImage/Source/Request+AlamofireImage.swift": [9223372036, 854775807]
+  "/Users/nsilvestre/Documents/ToDoList-iOS/Pods/AlamofireImage/Source/UIButton+AlamofireImage.swift": [9223372036, 854775807]
+  "/Users/nsilvestre/Documents/ToDoList-iOS/Pods/AlamofireImage/Source/UIImage+AlamofireImage.swift": [9223372036, 854775807]
+  "/Users/nsilvestre/Documents/ToDoList-iOS/Pods/AlamofireImage/Source/UIImageView+AlamofireImage.swift": [9223372036, 854775807]

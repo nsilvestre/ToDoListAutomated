@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "2b1f6d34ab56d9c2b7f3cd3ef370e490"
+build_time: [1553107448, 830006000]
+inputs:
+  "/Users/nsilvestre/Documents/ToDoList-iOS/Pods/TTGSnackbar/TTGSnackbar/TTGSnackbar.swift": [9223372036, 854775807]

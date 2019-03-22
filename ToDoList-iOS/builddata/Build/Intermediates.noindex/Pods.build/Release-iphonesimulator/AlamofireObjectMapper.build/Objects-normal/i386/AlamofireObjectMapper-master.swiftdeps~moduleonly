@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "b4bf968094d957c57ae8986b3e5f6b99"
+build_time: [1553107473, 855787000]
+inputs:
+  "/Users/nsilvestre/Documents/ToDoList-iOS/Pods/AlamofireObjectMapper/AlamofireObjectMapper/AlamofireObjectMapper.swift": [9223372036, 854775807]

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>9</integer>
+	<key>logs</key>
+	<dict>
+		<key>4168FB26-3A99-48BC-961D-38DA8A28CB09</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>4168FB26-3A99-48BC-961D-38DA8A28CB09.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>ToDoList project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ToDoList</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building workspace ToDoList with scheme ToDoList and configuration Release</string>
+			<key>timeStartedRecording</key>
+			<real>574800247.14019299</real>
+			<key>timeStoppedRecording</key>
+			<real>574800294.87020898</real>
+			<key>title</key>
+			<string>Building workspace ToDoList with scheme ToDoList and configuration Release</string>
+			<key>uniqueIdentifier</key>
+			<string>4168FB26-3A99-48BC-961D-38DA8A28CB09</string>
+		</dict>
+		<key>41BCA7D9-A2CE-4F57-AD5B-0A56BBD99F04</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>41BCA7D9-A2CE-4F57-AD5B-0A56BBD99F04.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>ToDoList project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ToDoList</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Cleaning workspace ToDoList with scheme ToDoList and configuration Release</string>
+			<key>timeStartedRecording</key>
+			<real>574800246.80297995</real>
+			<key>timeStoppedRecording</key>
+			<real>574800247.13645303</real>
+			<key>title</key>
+			<string>Cleaning workspace ToDoList with scheme ToDoList and configuration Release</string>
+			<key>uniqueIdentifier</key>
+			<string>41BCA7D9-A2CE-4F57-AD5B-0A56BBD99F04</string>
+		</dict>
+		<key>DF5A3E21-7DF6-4BF6-B36F-EBDD4006F539</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>DF5A3E21-7DF6-4BF6-B36F-EBDD4006F539.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>ToDoList project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ToDoList</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Cleaning workspace ToDoList with scheme ToDoList and configuration Release</string>
+			<key>timeStartedRecording</key>
+			<real>574692794.75267696</real>
+			<key>timeStoppedRecording</key>
+			<real>574692794.93398499</real>
+			<key>title</key>
+			<string>Cleaning workspace ToDoList with scheme ToDoList and configuration Release</string>
+			<key>uniqueIdentifier</key>
+			<string>DF5A3E21-7DF6-4BF6-B36F-EBDD4006F539</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

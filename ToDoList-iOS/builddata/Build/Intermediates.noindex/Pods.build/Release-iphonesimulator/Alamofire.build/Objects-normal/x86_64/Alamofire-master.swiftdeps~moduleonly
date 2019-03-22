@@ -1,0 +1,21 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "bba7bf1f5888dc4931f6a9e5b41310c9"
+build_time: [1553107455, 428864000]
+inputs:
+  "/Users/nsilvestre/Documents/ToDoList-iOS/Pods/Alamofire/Source/AFError.swift": [9223372036, 854775807]
+  "/Users/nsilvestre/Documents/ToDoList-iOS/Pods/Alamofire/Source/Alamofire.swift": [9223372036, 854775807]
+  "/Users/nsilvestre/Documents/ToDoList-iOS/Pods/Alamofire/Source/DispatchQueue+Alamofire.swift": [9223372036, 854775807]
+  "/Users/nsilvestre/Documents/ToDoList-iOS/Pods/Alamofire/Source/MultipartFormData.swift": [9223372036, 854775807]
+  "/Users/nsilvestre/Documents/ToDoList-iOS/Pods/Alamofire/Source/NetworkReachabilityManager.swift": [9223372036, 854775807]
+  "/Users/nsilvestre/Documents/ToDoList-iOS/Pods/Alamofire/Source/Notifications.swift": [9223372036, 854775807]
+  "/Users/nsilvestre/Documents/ToDoList-iOS/Pods/Alamofire/Source/ParameterEncoding.swift": [9223372036, 854775807]
+  "/Users/nsilvestre/Documents/ToDoList-iOS/Pods/Alamofire/Source/Request.swift": [9223372036, 854775807]
+  "/Users/nsilvestre/Documents/ToDoList-iOS/Pods/Alamofire/Source/Response.swift": [9223372036, 854775807]
+  "/Users/nsilvestre/Documents/ToDoList-iOS/Pods/Alamofire/Source/ResponseSerialization.swift": [9223372036, 854775807]
+  "/Users/nsilvestre/Documents/ToDoList-iOS/Pods/Alamofire/Source/Result.swift": [9223372036, 854775807]
+  "/Users/nsilvestre/Documents/ToDoList-iOS/Pods/Alamofire/Source/ServerTrustPolicy.swift": [9223372036, 854775807]
+  "/Users/nsilvestre/Documents/ToDoList-iOS/Pods/Alamofire/Source/SessionDelegate.swift": [9223372036, 854775807]
+  "/Users/nsilvestre/Documents/ToDoList-iOS/Pods/Alamofire/Source/SessionManager.swift": [9223372036, 854775807]
+  "/Users/nsilvestre/Documents/ToDoList-iOS/Pods/Alamofire/Source/TaskDelegate.swift": [9223372036, 854775807]
+  "/Users/nsilvestre/Documents/ToDoList-iOS/Pods/Alamofire/Source/Timeline.swift": [9223372036, 854775807]
+  "/Users/nsilvestre/Documents/ToDoList-iOS/Pods/Alamofire/Source/Validation.swift": [9223372036, 854775807]

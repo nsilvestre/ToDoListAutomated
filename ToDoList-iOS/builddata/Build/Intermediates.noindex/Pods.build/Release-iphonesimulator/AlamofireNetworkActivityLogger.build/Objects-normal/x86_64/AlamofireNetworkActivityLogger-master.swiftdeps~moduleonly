@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "54e2c6a97b27e3d4f73cb272580fa8e0"
+build_time: [1553107476, 128697000]
+inputs:
+  "/Users/nsilvestre/Documents/ToDoList-iOS/Pods/AlamofireNetworkActivityLogger/Source/NetworkActivityLogger.swift": [9223372036, 854775807]
