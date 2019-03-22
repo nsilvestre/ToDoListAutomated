@@ -22,11 +22,11 @@ public class SimulatorTest {
         /* Below capability must be uncommented for /AppiumTest job */
          //  capabilities.setCapability("app", "/Users/travis/build/nsilvestre/appiumTest/ToDoList/builddata/Build/Products/Release-iphonesimulator/ToDoList.app");
         /* Below capability must be uncommented for /ToDoList job */
-        capabilities.setCapability("app", "/Users/travis/build/nsilvestre/ToDoListAutomated/ToDoListAutomated/ToDoList-iOS/builddata/Build/Products/Release-iphonesimulator/ToDoList.app");
+        capabilities.setCapability("app", "/Users/travis/build/nsilvestre/ToDoListAutomated/ToDoList-iOS/builddata/Build/Products/Release-iphonesimulator/ToDoList.app");
         capabilities.setCapability("noReset", "true");
         capabilities.setCapability("useNewWDA", "false");
 
-
+    
         URL url = new URL("http://0.0.0.0:4723/wd/hub");
         IOSDriver driver = new IOSDriver(url, capabilities);
 
