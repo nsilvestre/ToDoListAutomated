@@ -10,9 +10,14 @@ before_install:
 install:
   - gem install cocoapods
   - pod repo update
+  - cd ToDoList-iOS
   - pod install
+  - cd ..
   - npm install -g appium
   - brew upgrade carthage
 
 script:
   - xcodebuild -sdk iphonesimulator -workspace ToDoList.xcworkspace -scheme ToDoList -configuration Release clean build -derivedDataPath builddata/
+  - Appium &
+  - cd AutomationTest
+  - mvn test
