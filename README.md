@@ -6,11 +6,7 @@ It uses **Java** as main language, **Cucumber **(_[https://cucumber.io/](https:/
 
 
 # 
-<<<<<<< HEAD
 Getting Started
-=======
-**Getting Started**
->>>>>>> 6b21db75f157315d8dc268ca8360e5f749f4f11b
 
 These instructions will help you to get the project up and running on your local machine for development and testing purposes
 
@@ -109,10 +105,7 @@ https://maven.apache.org/download.cgi
 
 *   **Install Intelllij IDEA.**
 
-Download the Community version from: 
-
-
-## [https://www.jetbrains.com/idea/download](https://www.jetbrains.com/idea/download) \
+Download the Community version from: [https://www.jetbrains.com/idea/download](https://www.jetbrains.com/idea/download) \
 \
 Set $JAVA_HOME environment variable
 
@@ -140,39 +133,12 @@ $ echo $JAVA_HOME
 2. Open IntelliJ IDEA
 3. Click Import Project option
 4. Select the Automation-UITests folder
-5. Select Maven \
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/TASReadme0.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/TASReadme0.png "image_tooltip")
-
+5. Select Maven
 6. Click Next on following wizard page
 7. Click Next on following wizard page
-8. Select groupId \
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/TASReadme1.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/TASReadme1.png "image_tooltip")
-
-9. Select SDK \
-
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/TASReadme2.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/TASReadme2.png "image_tooltip")
-
+8. Select groupId
+9. Select SDK
 10. Confirm the project name
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/TASReadme3.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/TASReadme3.png "image_tooltip")
-
 
 # 
 Running the tests
@@ -212,35 +178,7 @@ to:
 `$ mvn test \
 `
 
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/TASReadme4.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/TASReadme4.png "image_tooltip")
-` \
-\
-`
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/TASReadme5.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/TASReadme5.png "image_tooltip")
-` \
-`
-
 This command will execute the tests based on the configuration specified on TestRunner.java (_Kiosk/Automation-UITests/src/test/java/com/company/test/runner/TestRunner.java_) which by default is the entire suite (_features = {"src/test/java/com/company/test/features/EATSA"}_).
-
-
-```
-
-
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/TASReadme6.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/TASReadme6.png "image_tooltip")
-
-
-
-```
 
 
 If you want to execute just one or few feature files instead, you can do so:     \
@@ -261,23 +199,10 @@ If you want to execute just one or few feature files instead, you can do so:    
 
 
 
-1. From IntelliJ tap the following option on the right top corner: \
-
-
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/TASReadme7.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/TASReadme7.png "image_tooltip")
-
-2. Tap + button and JUnit: \
-
-
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/TASReadme8.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/TASReadme8.png "image_tooltip")
-
-3. Configuration:
+1. From IntelliJ on the right top corner tap the dropdown between hammer and the play buttons
+2. Tap Edit Configuration
+3. Tap + button and JUnit:
+4. Configuration:
 1. Name: it represent the name of the feature/s you will be running. I.e: OutOfStocks, All, etc.
 2. Test kind: _All in package_
 3. Package: _com.company.test.runner_
@@ -290,14 +215,7 @@ If you want to execute just one or few feature files instead, you can do so:    
 
 5. Working directory: $MODULE_WORKING_DIR$
 6. Use classpath of module: AutomationFramework
-4. Run the test: \
-
-
-<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/TASReadme9.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/TASReadme9.png "image_tooltip")
-
+5. Run the test clicking the play button
 
 # 
 Project Structure
@@ -379,14 +297,6 @@ Gherkin serves multiple purposes:
 *   Unambiguous executable specification
 *   Automated testing using Cucumber
 *   Document how the system actually behaves
-
-
-
-<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/TASReadme10.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/TASReadme10.png "image_tooltip")
-
 
 Gherkin documents are stored in **.feature (src/test/features/)** text files.
 
@@ -663,47 +573,11 @@ There are two very useful IntelliJ plugins that help us with this:
 
 Having those two plugins installed make a very nice test creation experience.
 
-When a new line is added to a .feature file, the IDE automatically understands that it doesn’t have a step definition yet and marks it as such:
+When a new line is added to a .feature file, the IDE automatically understands that it doesn’t have a step definition yet and marks it as such.
 
+Tapping Option+Enter we can display the possible actions.
 
-
-<p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/TASReadme11.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/TASReadme11.png "image_tooltip")
-
-
-Tapping Option+Enter we can display the possible actions:
-
-
-
-<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/TASReadme12.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/TASReadme12.png "image_tooltip")
-
-
-Selecting **create step definition** will prompt us to which step class we want to add the step and it will be automatically added following the Gherkin convention:
-
-
-
-<p id="gdcalert14" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/TASReadme13.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert15">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/TASReadme13.png "image_tooltip")
-
-
-If PartnerSteps is selected then the method is added there:
-
-
-
-<p id="gdcalert15" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/TASReadme14.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert16">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/TASReadme14.png "image_tooltip")
-
-
-Then inside the **iDoAnActionThatIsNotCreatedYet()** invoke the method in the page object and that’s it.
+Selecting **create step definition** will prompt us to which step class we want to add the step and it will be automatically added following the Gherkin convention.
 
 If the step has a variable like:
 
