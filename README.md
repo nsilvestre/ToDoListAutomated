@@ -78,23 +78,22 @@ https://maven.apache.org/download.cgi
 *   **Install Intelllij IDEA.**
 Download the Community version from: [https://www.jetbrains.com/idea/download](https://www.jetbrains.com/idea/download) \
 \
-Set $JAVA_HOME environment variable
+
+## Set $JAVA_HOME environment variable
 
 ```
 $ vim .bash_profile 
 export JAVA_HOME=$(/usr/libexec/java_home)
 $ source .bash_profile
 $ echo $JAVA_HOME
-
-
-## /Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home
+/Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home
 ```
 
 
 ##  Import Project
 
 
-1. TAS project is located on Kiosk project in a folder called **Automation-UITests **(_Kiosk/Automation-UITests_)
+1. TAS project is located on Kiosk project in a folder called **Automation-UITests** (_Kiosk/Automation-UITests_)
 2. Open IntelliJ IDEA
 3. Click Import Project option
 4. Select the Automation-UITests folder
@@ -121,7 +120,8 @@ _**Json file is located at:**_
 /Users/nsilvestre/Documents/EATSA/Kiosk/Kiosk/Automation-UITests/json_configs/appium_configs/eatsa_simulated_ipad_air_2.json
 ```
 
-Update app path: 
+Update app path:
+
 **from:** 
 ```
 "app":"/Users/travis/build/Keenwawa/Kiosk/Kiosk_Debug_test_simulator.app.zip"
@@ -137,11 +137,11 @@ Update app path:
 
 
 
-1. Open a terminal and launch the Appium server \
+1. Open a terminal and launch the Appium server:
 ```
 $ appium
 ```
-2. To run the entire suite navigate to the TAS path and execute: \
+2. To run the entire suite navigate to the TAS path and execute:
 ```
 $ mvn test
 ```
@@ -165,7 +165,7 @@ Kiosk/Automation-UITests/target/Eatsa/cucumber-report-html/cucumber-html-reports
 ```
 
 
-## JUnit: \
+## JUnit: 
 
 
 
