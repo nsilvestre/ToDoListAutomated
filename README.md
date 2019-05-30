@@ -6,7 +6,11 @@ It uses **Java** as main language, **Cucumber **(_[https://cucumber.io/](https:/
 
 
 # 
+<<<<<<< HEAD
 Getting Started
+=======
+**Getting Started**
+>>>>>>> 6b21db75f157315d8dc268ca8360e5f749f4f11b
 
 These instructions will help you to get the project up and running on your local machine for development and testing purposes
 
