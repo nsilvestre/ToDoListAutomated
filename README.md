@@ -47,8 +47,8 @@ This framework has been developed for internal use on Belatrix projects and adap
 It uses **Java** as main language, **Cucumber **(_[https://cucumber.io/](https://cucumber.io/)_)** **and **Appium** (_http://appium.io_) for scenarios creation and Mobile testing and **RestAssured** (_http://rest-assured.io_) for API testing/actions. 
 
 
-## 
-Getting Started
+# 
+**Getting Started**
 
 These instructions will help you to get the project up and running on your local machine for development and testing purposes.
 
