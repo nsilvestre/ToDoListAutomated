@@ -5,14 +5,12 @@ This framework has been developed for internal use on Belatrix projects and adap
 It uses **Java** as main language, **Cucumber **(_[https://cucumber.io/](https://cucumber.io/)_)** **and **Appium** (_http://appium.io_) for scenarios creation and Mobile testing and **RestAssured** (_http://rest-assured.io_) for API testing/actions. 
 
 
-# 
-Getting Started
+## Getting Started
 
 These instructions will help you to get the project up and running on your local machine for development and testing purposes
 
 
-## 
-Prerequisites
+## Prerequisites
 
 
 ```
@@ -31,84 +29,56 @@ Prerequisites
 
 
 
-## 
-Installing
-
-
+## Installing
 
 *   **Java JDK**
-
 Download it from:  \
 <code>[https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html)</code>
 
-
-
 *   **Install brew package manager.**
-
 Open a terminal and execute the command:
-
 
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 ```
 
-
-
 *   **Install Node.**
-
 In the terminal execute: 
-
 
 ```
 brew install node
 
 ```
 
-
-
 *   **Install Appium.**
-
 In a terminal run the following command:` `
-
 
 ```
 npm install -g appium
 
 ```
 
-
-
 *   **Install Carthage.**
-
 In the same terminal execute the command:` `
-
 
 ```
 brew install carthage
 
 ```
 
-
-
 *   **Install Maven.**
-
 Download the binary file from: 
-
 
 ```
 https://maven.apache.org/download.cgi
 
 ```
 
-
-
 *   **Install Intelllij IDEA.**
-
 Download the Community version from: [https://www.jetbrains.com/idea/download](https://www.jetbrains.com/idea/download) \
 \
 Set $JAVA_HOME environment variable
-
 
 ```
 $ vim .bash_profile 
@@ -121,11 +91,7 @@ $ echo $JAVA_HOME
 ```
 
 
-
-##  \
-\
-Import Project
-
+##  Import Project
 
 
 1. TAS project is located on Kiosk project in a folder called **Automation-UITests **(_Kiosk/Automation-UITests_)
@@ -139,30 +105,30 @@ Import Project
 9. Select SDK
 10. Confirm the project name
 
-# 
-Running the tests
+
+
+# Running the tests
 
 
 Tests can be run with Maven or JUnit.
 
-\
-[_Ideally following step won’t be needed in the near future_]
+_Ideally following step won’t be needed in the near future_
 
 Regardless which method is chosen, the **app** capability that takes place in the .json configuration file inside the TAS needs to be be updated. This **app** capability must have the local path of the app under testing.
 
-**_ \
-_**Json file is located at:**_ \
-`/Users/nsilvestre/Documents/EATSA/Kiosk/Kiosk/Automation-UITests/json_configs/appium_configs/eatsa_simulated_ipad_air_2.json`_**
-
-\
-Update app path: \
-from:** \
-`"app":"/Users/travis/build/Keenwawa/Kiosk/Kiosk_all_Debug_2.12.0_1329_test_simulator.app.zip"`** \
-to:
-
-
+_**Json file is located at:**_ 
 ```
-"app":"/Users/nsilvestre/Documents/Apps/Kiosk_all_Debug_2.12.0_1329_test_simulator.app.zip"
+/Users/nsilvestre/Documents/EATSA/Kiosk/Kiosk/Automation-UITests/json_configs/appium_configs/eatsa_simulated_ipad_air_2.json
+```
+
+Update app path: 
+**from:** 
+```
+"app":"/Users/travis/build/Keenwawa/Kiosk/Kiosk_Debug_test_simulator.app.zip"
+```
+**to:**
+```
+"app":"/Users/nsilvestre/Documents/Apps/Kiosk_Debug_test_simulator.app.zip"
 ```
 
 
@@ -172,25 +138,31 @@ to:
 
 
 1. Open a terminal and launch the Appium server \
-`$ appium`
+```
+$ appium
+```
 2. To run the entire suite navigate to the TAS path and execute: \
-`$ mvn test \
-`
+```
+$ mvn test
+```
 
 This command will execute the tests based on the configuration specified on TestRunner.java (_Kiosk/Automation-UITests/src/test/java/com/company/test/runner/TestRunner.java_) which by default is the entire suite (_features = {"src/test/java/com/company/test/features/EATSA"}_).
 
 
-If you want to execute just one or few feature files instead, you can do so:     \
+If you want to execute just one or few feature files instead, you can do so:   
+
+```
+$ mvn test -Dcucumber.options="--glue com/company/test/steps/common/ --glue com/company/test/steps/EATSA src/test/java/com/company/test/features/EATSA/A_SetUp.feature src/test/java/com/company/test/features/EATSA/OutOfStocks.feature"
+```
+
+In this case just **A_SetUp.feature** (_it’s always needed for environment configuration purposes_) and **OutOfStocks.feature** will be executed.
 
 
 
-`$ mvn test -Dcucumber.options="--glue com/company/test/steps/common/ --glue com/company/test/steps/EATSA src/test/java/com/company/test/features/EATSA/A_SetUp.feature src/test/java/com/company/test/features/EATSA/OutOfStocks.feature" \
-\
-`In this case just **A_SetUp.feature** (_it’s always needed for environment configuration purposes_) and **OutOfStocks.feature** will be executed.
-
-
-
-3. Test results report can be found at: <code><em>Kiosk/Automation-UITests/</em>target/Eatsa/cucumber-report-html/cucumber-html-reports/</code>
+3. Test results report can be found at: 
+```
+Kiosk/Automation-UITests/target/Eatsa/cucumber-report-html/cucumber-html-reports/
+```
 
 
 ## JUnit: \
@@ -205,23 +177,22 @@ If you want to execute just one or few feature files instead, you can do so:    
 1. Name: it represent the name of the feature/s you will be running. I.e: OutOfStocks, All, etc.
 2. Test kind: _All in package_
 3. Package: _com.company.test.runner_
-4. VM options: it’s the same argument passed to Maven in the previous example: \
-`-Dcucumber.options="--glue com/company/test/steps/common/ --glue com/company/test/steps/EATSA src/test/java/com/company/test/features/EATSA/A_SetUp.feature src/test/java/com/company/test/features/EATSA/OutOfStocks.feature"`
+4. VM options: it’s the same argument passed to Maven in the previous example: 
 
-<code>         \
-<em>Glue code: it's the code that interacts with the application. It's the implementation of the actions described on .feature files. \
-</em></code>
+```
+-Dcucumber.options="--glue com/company/test/steps/common/ --glue com/company/test/steps/EATSA src/test/java/com/company/test/features/EATSA/A_SetUp.feature src/test/java/com/company/test/features/EATSA/OutOfStocks.feature"
+```
+
+_Glue code: it's the code that interacts with the application. It's the implementation of the actions described on .feature files._ 
 
 5. Working directory: $MODULE_WORKING_DIR$
 6. Use classpath of module: AutomationFramework
 5. Run the test clicking the play button
 
-# 
-Project Structure
+# Project Structure
 
 
 Under Automation-UITests/src there are two main folders:
-
 
 
 *   java
@@ -258,8 +229,7 @@ Subfolders:
 Above concepts (_features, steps, pages_) are explained in details in the following sections.
 
 
-# 
-Cucumber
+# Cucumber
 
 
 ## Introduction
@@ -329,22 +299,15 @@ When I swipe to login
 
 
 Corresponds with the following step definition on `LoginSteps.java` file: \
-**<code> \
-@When("^I swipe to login$")</code></strong>
-
 
 ```
+@When("^I swipe to login$")
 public void swipeToLogin() {
-loginPage.swipeToLogin();
+    loginPage.swipeToLogin();
+}
 ```
 
-
-<code>}<strong><em> \
-</em></strong></code>
-
-
-# 
-Features, steps and page objects relation
+# Features, steps and page objects relation
 
 Each ‘**.feature file’** **(src/test/features/) **groups scenarios that are related and test one particular feature. For instance, `AddItemToCart.feature` has the following scenarios:
 
@@ -366,7 +329,7 @@ On the other hand, each ‘**steps definitition file’** **(src/test/steps/) **
 
 Per each ‘**steps definition class’** exists a ‘**page object class’ (src/test/pages/) **that implement each steps. For instance:
 
-`ItemDetailsSteps.java` has two steps: \
+`ItemDetailsSteps.java` has two steps: 
 
 
 
@@ -400,8 +363,7 @@ getWaitDriver().until(ExpectedConditions.elementToBeClickable(MobileBy.iOSNsPred
 So to sum up, **feature** files contains scenarios that are related to one feature. Each scenario has **steps** that are executed in different screens. Therefore, the** steps **of a scenario, are implemented in different **step definition** classes. Each **step definition** class corresponds to one **page **class (I.E: `CheckOutSteps.java -> CheckOutPage.java`).
 
 
-# 
-Feature and Scenario creation
+# Feature and Scenario creation
 
 **Path:** Automation-UITests/src/test/java/com.company.test/features
 
@@ -494,8 +456,7 @@ Examples:
 
 
 
-# 
-Step Definition Class creation
+# Step Definition Class creation
 
 **Path:** Automation-UITests/src/test/java/com.company.test/steps
 
@@ -558,8 +519,7 @@ Assert.assertTrue(checkOutPage.validateEmailIsSaved());
 
 
 
-# 
-Step definition method creation
+# Step definition method creation
 
 Each step on a .feature files must corresponds with a Step Definition (_the glue code_) in a steps class.
 
@@ -603,8 +563,7 @@ There are several ways to do this depending on the parameter type. All the infor
 
 *   [https://cucumber.io/docs/cucumber/cucumber-expressions/](https://cucumber.io/docs/cucumber/cucumber-expressions/)
 
-# 
-Page Object Model
+# Page Object Model
 
 
 
@@ -613,8 +572,7 @@ Page Object Model
 Page Object Pattern also known as POM (Page Object Model) is a design pattern that define that per each screen there should be a corresponding page class. This Page class has the responsibility of finding all the elements as well as performing all the actions that belong to that screen.
 
 
-# 
-Page Object Classes creation
+# Page Object Classes creation
 
 **Path:** Automation-UITests/src/test/java/com.company.test/pages
 
@@ -667,8 +625,7 @@ getWaitDriver().until(ExpectedConditions.elementToBeClickable(MobileBy.iOSNsPred
 
 
 
-# 
-Locators Strategies 
+# Locators Strategies 
 
 There are multiple ways to find an element:
 
@@ -723,8 +680,10 @@ IDs strategies are the most appropriate.
 
 Examples:
 
-By.id. \
-`getWaitDriver().until(ExpectedConditions.elementToBeClickable(By.id("Signature Rice Plate"))).click();`
+By.id. 
+```
+getWaitDriver().until(ExpectedConditions.elementToBeClickable(By.id("Signature Rice Plate"))).click();
+```
 
 By.className.
 
@@ -759,7 +718,5 @@ There is one additional strategy which is not in the above table. It’s By Pred
 String addButtonPredicate = "name LIKE '*Add |*'";
 
 getWaitDriver().until(ExpectedConditions.elementToBeClickable(MobileBy.iOSNsPredicateString(addButtonPredicate))).click();
-
-
-<!-- Docs to Markdown version 1.0β17 -->
+```
 
