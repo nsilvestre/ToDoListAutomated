@@ -2,7 +2,7 @@
 
 This framework has been developed for internal use on Belatrix projects and adapted to EATSA necesites.
 
-It uses **Java** as main language, **Cucumber **(_[https://cucumber.io/](https://cucumber.io/)_)** **and **Appium** (_http://appium.io_) for scenarios creation and Mobile testing and **RestAssured** (_http://rest-assured.io_) for API testing/actions. 
+It uses **Java** as main language, **Cucumber** (_https://cucumber.io/_) and **Appium** (_http://appium.io_) for scenarios creation and Mobile testing and **RestAssured** (_http://rest-assured.io_) for API testing/actions. 
 
 
 ## Getting Started
@@ -32,8 +32,10 @@ These instructions will help you to get the project up and running on your local
 ## Installing
 
 *   **Java JDK**
-Download it from:  \
-<code>[https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html)</code>
+Download it from:
+```
+https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html
+```
 
 *   **Install brew package manager.**
 Open a terminal and execute the command:
@@ -76,8 +78,7 @@ https://maven.apache.org/download.cgi
 ```
 
 *   **Install Intelllij IDEA.**
-Download the Community version from: [https://www.jetbrains.com/idea/download](https://www.jetbrains.com/idea/download) \
-\
+Download the Community version from: https://www.jetbrains.com/idea/download
 
 ## Set $JAVA_HOME environment variable
 
