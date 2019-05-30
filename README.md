@@ -1,17 +1,17 @@
-## TAS (Test Automation Solution)
+# TAS (Test Automation Solution)
 
 This framework has been developed for internal use on Belatrix projects and adapted to EATSA necesites.
 
 It uses **Java** as main language, **Cucumber **(_[https://cucumber.io/](https://cucumber.io/)_)** **and **Appium** (_http://appium.io_) for scenarios creation and Mobile testing and **RestAssured** (_http://rest-assured.io_) for API testing/actions. 
 
 
-## 
+# 
 Getting Started
 
 These instructions will help you to get the project up and running on your local machine for development and testing purposes
 
 
-### 
+## 
 Prerequisites
 
 
@@ -31,7 +31,7 @@ Prerequisites
 
 
 
-### 
+## 
 Installing
 
 
@@ -117,15 +117,14 @@ $ source .bash_profile
 $ echo $JAVA_HOME
 
 
-### /Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home
+## /Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home
 ```
 
 
 
-### 
-` \
+##  \
 \
-`Import Project
+Import Project
 
 
 
@@ -140,7 +139,7 @@ $ echo $JAVA_HOME
 9. Select SDK
 10. Confirm the project name
 
-## 
+# 
 Running the tests
 
 
@@ -168,7 +167,7 @@ to:
 
 
 
-### MAVEN:
+## MAVEN:
 
 
 
@@ -194,7 +193,7 @@ If you want to execute just one or few feature files instead, you can do so:    
 3. Test results report can be found at: <code><em>Kiosk/Automation-UITests/</em>target/Eatsa/cucumber-report-html/cucumber-html-reports/</code>
 
 
-### JUnit: \
+## JUnit: \
 
 
 
@@ -217,7 +216,7 @@ If you want to execute just one or few feature files instead, you can do so:    
 6. Use classpath of module: AutomationFramework
 5. Run the test clicking the play button
 
-## 
+# 
 Project Structure
 
 
@@ -229,7 +228,7 @@ Under Automation-UITests/src there are two main folders:
 *   test
 
 
-### Java
+## Java
 
 This folder contains classes related with the Framework, system’s constants, main page object and utils. 
 
@@ -244,7 +243,7 @@ Subfolders:
 *   APIUtils: this class contains the methods to mark elements (items and modifiers) as Out of Stock.
 
 
-### Test
+## Test
 
 This folder contains all the stuff related with test cases creation.
 
@@ -259,11 +258,11 @@ Subfolders:
 Above concepts (_features, steps, pages_) are explained in details in the following sections.
 
 
-## 
+# 
 Cucumber
 
 
-### Introduction
+## Introduction
 
 Cucumber is a tool that supports [Behaviour-Driven Development(BDD)](https://cucumber.io/docs/bdd).
 
@@ -286,7 +285,7 @@ Each scenario is a list of steps for Cucumber to work through. Cucumber verifies
 In order for Cucumber to understand the scenarios, they must follow some basic syntax rules, called [Gherkin](https://cucumber.io/docs/gherkin/).
 
 
-### What is Gherkin?
+## What is Gherkin?
 
 Gherkin is a simple set of grammar rules that makes plain text structured enough for Cucumber to understand. The scenario above (_Validate that email can be added/edited_) is written in Gherkin.
 
@@ -315,7 +314,7 @@ The most used in this project are:
 *   Data Tables
 
 
-### Step Definitions
+## Step Definitions
 
 In addition to **[feature files](https://cucumber.io/docs/gherkin/reference#feature)** **(src/test/features/)**, Cucumber needs a set of **s[tep definitions](https://cucumber.io/docs/cucumber/step-definitions)** **(src/test/steps/)**. Step definitions map (or “**glue**”) each Gherkin step to programming code to carry out the action that should be performed by the step.
 
@@ -344,7 +343,7 @@ loginPage.swipeToLogin();
 </em></strong></code>
 
 
-## 
+# 
 Features, steps and page objects relation
 
 Each ‘**.feature file’** **(src/test/features/) **groups scenarios that are related and test one particular feature. For instance, `AddItemToCart.feature` has the following scenarios:
@@ -401,18 +400,18 @@ getWaitDriver().until(ExpectedConditions.elementToBeClickable(MobileBy.iOSNsPred
 So to sum up, **feature** files contains scenarios that are related to one feature. Each scenario has **steps** that are executed in different screens. Therefore, the** steps **of a scenario, are implemented in different **step definition** classes. Each **step definition** class corresponds to one **page **class (I.E: `CheckOutSteps.java -> CheckOutPage.java`).
 
 
-## 
+# 
 Feature and Scenario creation
 
 **Path:** Automation-UITests/src/test/java/com.company.test/features
 
 
-### Feature
+## Feature
 
 Each feature needs to start with the **Feature **keyword, follow by its name. The feature, is going to be identify in the reports by this name. Finally, after this line and before the first scenario, there’s a place for the description of the user story.
 
 
-### Scenario
+## Scenario
 
 Each scenario must start with the **Scenario Outline **keyword followed by a brief scenario description. **Scenario Outline **keyword works together with the **Examples **keywords, which is a table appended at the end of the scenario. 
 
@@ -446,7 +445,7 @@ Examples:
 
 
 
-### Important:
+## Important:
 
 Each scenario **must** start with the following **Given** step:
 
@@ -495,7 +494,7 @@ Examples:
 
 
 
-## 
+# 
 Step Definition Class creation
 
 **Path:** Automation-UITests/src/test/java/com.company.test/steps
@@ -559,7 +558,7 @@ Assert.assertTrue(checkOutPage.validateEmailIsSaved());
 
 
 
-## 
+# 
 Step definition method creation
 
 Each step on a .feature files must corresponds with a Step Definition (_the glue code_) in a steps class.
@@ -604,17 +603,17 @@ There are several ways to do this depending on the parameter type. All the infor
 
 *   [https://cucumber.io/docs/cucumber/cucumber-expressions/](https://cucumber.io/docs/cucumber/cucumber-expressions/)
 
-## 
+# 
 Page Object Model
 
 
 
-### Page Object Pattern
+## Page Object Pattern
 
 Page Object Pattern also known as POM (Page Object Model) is a design pattern that define that per each screen there should be a corresponding page class. This Page class has the responsibility of finding all the elements as well as performing all the actions that belong to that screen.
 
 
-## 
+# 
 Page Object Classes creation
 
 **Path:** Automation-UITests/src/test/java/com.company.test/pages
@@ -668,7 +667,7 @@ getWaitDriver().until(ExpectedConditions.elementToBeClickable(MobileBy.iOSNsPred
 
 
 
-## 
+# 
 Locators Strategies 
 
 There are multiple ways to find an element:
